@@ -16,3 +16,10 @@ while num >0:
     count+=1
     num = num //10
 print(count)
+
+from math import log10
+
+def count_digit(n):
+    return int(log10(n)) + 1
+
+print(count_digit(284439))
