@@ -8,3 +8,11 @@ while num>0:
     print(last_digit)
     # it will convert the floor division in integer value
     num =num // 10
+# for the count the numbers in form of loop approch and the log approch 
+n =284439
+num =n 
+count =0
+while num >0:
+    count+=1
+    num = num //10
+print(count)
