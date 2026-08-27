@@ -45,3 +45,6 @@ for i in range(1,int(sqrt(a))+1):
     # if we want the in order 
     result.sort()
 print(result)
+
+# time complexity is O(sqrt(N))+O(NlogN)
+# SC is O(K)
