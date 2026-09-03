@@ -49,3 +49,29 @@ for x in m:
         print(0)
 
 # TC and SC will be same 
+
+# charecter hashing 
+s = "azyxyyzaaaa"
+q = ["d", "a", "y", "x"]
+
+# Step 1: Create a hash list of size 26 initialized to 0
+hash_list = [0] * 26
+
+# Step 2: Count frequencies of characters in 's'
+for ch in s:
+    ascii_val = ord(ch)
+    # ord(ch): Gets the ASCII code of the character.
+    index = ascii_val - 97
+    # index = ascii_val - 97: Maps the ASCII value into an index range of 0 to 25.
+    hash_list[index] += 1
+
+# Step 3: Answer queries in 'q'
+for ch in q:
+    ascii_val = ord(ch)
+    # Calculate its index using the same formula: index = ord(ch) - 97.
+    index = ascii_val - 97
+    print(hash_list[index])
+# Time Complexity: O(N + M) — Loop 1 takes N steps to count s,
+#  and Loop 2 takes M steps to print answers for q.
+# Space Complexity: O(1) — hash_list is always fixed at size 26 regardless of
+#  how long s or q are.
