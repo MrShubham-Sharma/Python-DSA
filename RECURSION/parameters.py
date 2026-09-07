@@ -22,3 +22,17 @@ def my_funct(i,n):
     # here we need to add i +1 means 1+1=2 till 4
     my_funct(i+1,n)
 my_funct(1,4)
+
+# Tail Recursion
+def my_funct(x,n):
+    if x>n:
+        return
+    # in Tail recursion as usual we write an logic first and then the output
+    my_funct(x+1,n)
+    # at first the counter will execute till N then the output will print Nth times
+    print(x)
+my_funct(1,9)
+
+# it aslo called as backtracking where the it will end-up on the 1+1=2 amd n=9,9,9 
+# so after thatnit will start printing from 9-1 
+# because the logic execute first and printing later 
