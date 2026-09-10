@@ -1,3 +1,4 @@
+# print X at N times
 # we take an parameters not using an count just x & n
 def my_funct(x,n):
     # if we want the print x till 5 times it will 
