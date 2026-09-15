@@ -24,3 +24,6 @@ def my_funct(n):
     return n + my_funct(n - 1)
 x = my_funct(10)
 print(x)
+
+# TC will be O(n)
+# SC wil be O(n) in stack 
