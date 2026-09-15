@@ -9,3 +9,4 @@ def My_funct(sum,i,n):
     My_funct(sum+i,i+1,n)
     # sum = 0+1 initial phase, 1+1 addition counter ,n>5 limiter ?
 My_funct(0,1,5)
+
