@@ -5,7 +5,7 @@
 # if 10*(9*..*1)
 # it means 10* f(10-1) =n*f(n-1) 
 def my_function(n):
-    if n==1:
+    if n==1 or n==0:
         # if the the value calls n==1 it will stop 
         return 1
     return n*my_function(n-1)
