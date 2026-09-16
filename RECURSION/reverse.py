@@ -18,3 +18,6 @@ def reverseArray(nums, l, r):
 
 reverseArray(nums, 0, len(nums) - 1)
 print(nums)
+
+# Time complexity ==O(N/2) ==1/2 *N ==O(N)
+# Space complexity ==O(N/2) ==1/2 *N ==O(N)
