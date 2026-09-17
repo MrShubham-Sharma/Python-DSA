@@ -19,3 +19,16 @@ def funct(s): # we Have String as an s object
     return True
 
 funct("NITIN")
+
+# by Recursion
+def funct(s, l, r):
+    if l >= r:
+        print(True)
+        return True
+    if s[l] != s[r]:
+        print(False)
+        return False
+    return funct(s, l + 1, r - 1)
+
+s = "MOM"
+funct(s, 0, len(s) - 1)
